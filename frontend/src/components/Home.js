@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Resume from '../resume/MollyChi.pdf'
 import { Link } from 'react-router-dom'
-const Contaoner = styled.div`
+const Container = styled.div`
     display: flex;
     flex-direction: column;
 `
@@ -11,7 +11,7 @@ const LogoSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 290px;
+    min-height: 220px;
     height: calc(100% - 560px);
     img {
         width: 272px;
@@ -133,7 +133,7 @@ const NavLinks = styled(Link)`
 `
 const Home = () => {
     return (
-        <Contaoner>
+        <Container>
             <LogoSection>
                 <img
                     src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
@@ -191,7 +191,7 @@ const Home = () => {
                     </button>
 
                     <button className='downloadResumeBTN'>
-                        <a href={Resume} download>
+                        <a href={Resume ?? '#'} download>
                             Download my Resume
                         </a>
                     </button>
@@ -209,7 +209,7 @@ const Home = () => {
                     </button>
                 </ButtonSection>
             </SearchSection>
-        </Contaoner>
+        </Container>
     )
 }
 

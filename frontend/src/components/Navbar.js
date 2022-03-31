@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
-import Profile from '../images/profile.png'
+import Profile from '../images/profile.jpg'
+// import Profile from '../images/profile.png'
 
 const Nav = styled.div`
     display: flex;
@@ -55,7 +56,15 @@ const Navbar = () => {
                     <img
                         src={Profile ?? 'https://picsum.photos/200/300'}
                         alt='profile'
-                        style={{ width: '32px', height: '32px' }}
+                        style={{
+                            width: '32px',
+                            height: '32px',
+                            borderRadius: '50%',
+                        }}
+                        // style={{
+                        //     width: '32px',
+                        //     height: '32px',
+                        // }}
                     />
                 </Link>
             </RightLinks>
