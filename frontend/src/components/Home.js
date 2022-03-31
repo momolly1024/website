@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Resume from '../resume/MollyChi.pdf'
+import { Link } from 'react-router-dom'
 const Contaoner = styled.div`
     display: flex;
     flex-direction: column;
@@ -66,6 +67,12 @@ const ButtonSection = styled.div`
         cursor: pointer;
         user-select: none;
     }
+    button a {
+        color: #34383b;
+    }
+    button a:active {
+        color: #34383b;
+    }
 `
 
 const SearchIcon = styled.span`
@@ -114,7 +121,16 @@ const MicIcon = styled.div`
         vertical-align: middle;
     }
 `
+const NavLinks = styled(Link)`
+    padding: 0 8px;
+    text-decoration: none;
+    color: #000;
 
+    svg {
+        height: 24px;
+        width: 20px;
+    }
+`
 const Home = () => {
     return (
         <Contaoner>
@@ -161,13 +177,35 @@ const Home = () => {
                     </Search>
                 </Form>
                 <ButtonSection>
-                    <button>Molly Chi</button>
-                    <button>Writing Medium</button>
-                    <button>Download my resume</button>
                     <button>
-                        <a href={Resume} download>
-                            Contact me
+                        <NavLinks to='/about'>Molly Chi</NavLinks>
+                    </button>
+                    <button>
+                        <a
+                            href='https://molly1024.medium.com/'
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            My Medium
                         </a>
+                    </button>
+
+                    <button className='downloadResumeBTN'>
+                        <a href={Resume} download>
+                            Download my Resume
+                        </a>
+                    </button>
+                    <button>
+                        <a
+                            href='https://github.com/momolly1024'
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            My Github
+                        </a>
+                    </button>
+                    <button>
+                        <NavLinks to='/contact'>Contact me</NavLinks>
                     </button>
                 </ButtonSection>
             </SearchSection>
