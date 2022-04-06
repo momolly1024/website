@@ -3,7 +3,6 @@ import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 // import Profile from '../images/profile.jpg'
 import Profile from '../images/profile.png'
-
 const Nav = styled.div`
     display: flex;
     justify-content: space-between;
@@ -40,7 +39,7 @@ const Navbar = () => {
                 <NavLinks to='/portfolio'>Portfolio</NavLinks>
             </LeftLinks>
             <RightLinks>
-                <NavLinks to='/gmail'>Gmail</NavLinks>
+                <NavLinks to='/mediumPosts'>Medium Posts</NavLinks>
                 <NavLinks to='/contact'>Contact</NavLinks>
                 <NavLinks
                     to='/'

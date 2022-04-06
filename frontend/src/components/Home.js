@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import styled from 'styled-components'
 import Resume from '../resume/MollyChi.pdf'
 
@@ -244,7 +244,7 @@ const Home = () => {
     })
     const navigate = useNavigate()
 
-    React.useEffect(() => {
+    useEffect(() => {
         // navigate(`/${selectedOption.value}`)
         console.log(selectedOption.value)
         // setTimeout(() => {
@@ -359,7 +359,7 @@ const Home = () => {
                         <a
                             href='https://molly1024.medium.com/'
                             target='_blank'
-                            rel='noreferrer'
+                            rel='noreferrer noopener'
                         >
                             My Medium
                         </a>
@@ -374,7 +374,7 @@ const Home = () => {
                         <a
                             href='https://github.com/momolly1024'
                             target='_blank'
-                            rel='noreferrer'
+                            rel='noreferrer noopener'
                         >
                             My Github
                         </a>
