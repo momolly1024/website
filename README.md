@@ -1,6 +1,6 @@
 ## website
 
-![](https://i.imgur.com/tuu8y7a.gif)
+![](https://i.imgur.com/L4UTF2c.png)
 
 -   react
 -   create react app
