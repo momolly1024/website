@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Resume from '../resume/MollyChi.pdf'
 
@@ -9,10 +9,10 @@ import { GoSearch } from 'react-icons/go'
 const options = [
     { value: 'about', label: 'about' },
     { value: 'portfolio', label: 'portfolio' },
-    { value: 'gmail', label: 'gmail' },
+    { value: 'mediumPosts', label: 'medium posts' },
     {
         value: 'contact',
-        label: 'banana',
+        label: 'contact',
     },
 ]
 
@@ -247,9 +247,9 @@ const Home = () => {
     useEffect(() => {
         // navigate(`/${selectedOption.value}`)
         console.log(selectedOption.value)
-        // setTimeout(() => {
-        //     navigate(`/${selectedOption.value}`)
-        // }, 500)
+        setTimeout(() => {
+            navigate(`/${selectedOption.value}`)
+        }, 300)
     }, [selectedOption])
 
     return (
