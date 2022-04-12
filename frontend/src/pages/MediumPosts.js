@@ -101,7 +101,7 @@ const MediumPosts = () => {
     return (
         <Content>
             <ul>
-                <h2>Posts</h2>
+                <h2>Latest Posts</h2>
                 {posts.map((r) => (
                     <li key={r.id}>
                         <List title={r.title} link={r.link} />

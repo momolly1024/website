@@ -11,6 +11,14 @@ const options = [
     { value: 'portfolio', label: 'portfolio' },
     { value: 'mediumPosts', label: 'medium posts' },
     {
+        value: '',
+        label: (
+            <a href={Resume} download>
+                download my resume
+            </a>
+        ),
+    },
+    {
         value: 'contact',
         label: 'contact',
     },
@@ -82,7 +90,7 @@ const ButtonSection = styled.div`
         user-select: none;
     }
     button a {
-        color: #34383b;
+        color: #4285f4;
     }
     button a:active {
         color: #34383b;
@@ -240,7 +248,7 @@ const ValueContainer = ({ children }) => {
 const Home = () => {
     const [selectedOption, setSelectedOption] = useState({
         value: '',
-        label: 'hello world :>',
+        label: '',
     })
     const navigate = useNavigate()
 
@@ -366,8 +374,12 @@ const Home = () => {
                     </button>
 
                     <button className='downloadResumeBTN'>
-                        <a href={Resume} download>
-                            Download my Resume
+                        <a
+                            href='https://drive.google.com/file/d/11qvY0I1XwziQRLJ21f6ft_S3GVh0ABPz/view'
+                            target='_blank'
+                            rel='noreferrer noopener'
+                        >
+                            My Resume
                         </a>
                     </button>
                     <button>
@@ -377,6 +389,15 @@ const Home = () => {
                             rel='noreferrer noopener'
                         >
                             My Github
+                        </a>
+                    </button>
+                    <button>
+                        <a
+                            href='https://www.linkedin.com/in/mollychi/'
+                            target='_blank'
+                            rel='noreferrer noopener'
+                        >
+                            Linkedin
                         </a>
                     </button>
 

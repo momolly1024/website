@@ -5,11 +5,9 @@ import MyTimeline from '../components/MyTimeline'
 
 const About = () => {
     return (
-        <div style={{textalign:'center'}}>
-            <Wave1 text="I'm Molly :>     " />
-            <MyTimeline>
-                <p> timeline~~~~~</p>
-            </MyTimeline>
+        <div style={{ textalign: 'center' }}>
+            
+            <MyTimeline />
         </div>
     )
 }

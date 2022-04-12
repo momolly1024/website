@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Container } from '../styles/center'
-import { useSpring, animated } from 'react-spring'
 import './styles.css'
 import { FaGithub, FaLinkedin, FaLink } from 'react-icons/fa'
 import { AiFillMediumCircle } from 'react-icons/ai'
@@ -38,7 +37,7 @@ function Image({ ratio, src }) {
 function Info() {
     return (
         <div className='info'>
-            <h2>Portfolio (Sorting by Updated Date)</h2>
+            <h2>Portfolio</h2>
 
             {/* Springy cards from{' '}
             <a target='_blank' href='https://bit.ly/382KSdo' rel='noreferrer'>
@@ -52,7 +51,7 @@ function Info() {
 const cards = [
     {
         title: 'personal calendar 👩‍🎨',
-        description: 'personal calendar',
+        description: 'python Fast API & google sheet & react',
         image: 'https://i.imgur.com/1yGYkvI.png',
         imageRatio: 839 / 1133,
         type: ['react', 'python', 'fast api'],
@@ -62,7 +61,7 @@ const cards = [
     },
     {
         title: 'Line Bot 🚀',
-        description: '找謎片機器人',
+        description: 'A cool line bot / node.js',
         image: 'https://i.imgur.com/B8abnO6.png',
         imageRatio: 730 / 1030,
         type: ['react', 'line bot', 'nodejs'],
@@ -72,8 +71,8 @@ const cards = [
     },
 
     {
-        title: 'StockPrice 🚀',
-        description: 'line notify stock price',
+        title: 'Stock Price notify🚀',
+        description: 'Get stock price by line notify / python',
         image: 'https://i.imgur.com/FPB5YHf.jpg',
         imageRatio: 730 / 1030,
         type: ['react', 'python', 'line notify'],
@@ -84,7 +83,7 @@ const cards = [
 
     {
         title: 'CRUD todo list 🚀',
-        description: 'todo list',
+        description: 'Todo list',
         image: 'https://i.imgur.com/W6rYowE.png',
         imageRatio: 730 / 1030,
         type: ['react'],
@@ -94,7 +93,7 @@ const cards = [
     },
     {
         title: '番茄鐘 POMODORO 🚀',
-        description: 'vue',
+        description: 'pmomdoro / vue',
         image: 'https://i.imgur.com/O2Mn1ZG.png',
         imageRatio: 730 / 1030,
         type: ['vue'],
@@ -104,7 +103,7 @@ const cards = [
     },
     {
         title: 'Login page 🚀',
-        description: 'login page',
+        description: 'A login page / pure css',
         image: 'https://i.imgur.com/6YuwqKu.gif',
         imageRatio: 730 / 1030,
         type: ['react'],
@@ -113,8 +112,8 @@ const cards = [
         medium: '',
     },
     {
-        title: 'blog 🚀',
-        description: '',
+        title: 'Static Webpage Blog 🚀',
+        description: 'Layout pratice',
         image: 'https://i.imgur.com/NOjyWMp.jpg',
         imageRatio: 730 / 1030,
         type: ['react'],
@@ -124,7 +123,7 @@ const cards = [
     },
     {
         title: 'weight record 🚀',
-        description: '',
+        description: 'CRUD',
         image: 'https://i.imgur.com/jXHDvkB.png',
         imageRatio: 730 / 1030,
         type: ['react'],
@@ -134,7 +133,7 @@ const cards = [
     },
     {
         title: 'covid tracker🚀',
-        description: '',
+        description: 'get API pratice',
         image: 'https://i.imgur.com/YdddeZS.png',
         imageRatio: 730 / 1030,
         type: ['react'],
@@ -143,8 +142,8 @@ const cards = [
         medium: '',
     },
     {
-        title: 'tv show Search🚀',
-        description: '',
+        title: 'TV show Search🚀',
+        description: 'get Tv show API practice',
         image: 'https://i.imgur.com/DdXwlLz.png',
         imageRatio: 730 / 1030,
         type: ['react'],
@@ -153,14 +152,13 @@ const cards = [
         medium: '',
     },
     {
-        title: 'TEST ⚡️',
-        description:
-            'description description description description description description',
-        image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
+        title: 'Food Search ⚡️',
+        description: 'get food recipe API practice',
+        image: 'https://i.imgur.com/eL51wLZ.png',
         imageRatio: 784 / 1016,
         type: ['react'],
-        link: 'https://molly1024.medium.com/',
-        github: 'https://github.com/momolly1024',
+        link: '',
+        github: 'https://github.com/momolly1024/react_foodrecipe',
         medium: '',
     },
 ]

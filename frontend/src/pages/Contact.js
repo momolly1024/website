@@ -68,19 +68,21 @@ const Contact = () => {
                 <Card>
                     <h2>Leave a Message for me.</h2>
                     <br />
-
+                    <p style={{ color: 'gray' }}>
+                        My Email : momolly1024@gmail.com
+                    </p>
                     <form ref={form} onSubmit={sendEmail}>
                         <div>
-                            <label>Name</label>
+                            <label>Your Name</label>
                             <Input
                                 type='text'
                                 name='user_name'
                                 required
-                                placeholder=' who are you?'
+                                placeholder=''
                             />
                         </div>
                         <div>
-                            <label>Email</label>
+                            <label>Your Email</label>
                             <Input type='email' name='user_email' required />
                         </div>
                         <div>
